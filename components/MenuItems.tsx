@@ -8,9 +8,9 @@ import { shoe4 } from "@/assets/images"
 
 function MenuItems({ showMenu, active }) {
   return (
-    <div className={active ? "lg:hidden" : "hidden" }>
-    <Image className="mb-2 " src={ hamburger } alt="hamburger" width={25} height={25} onClick={showMenu}/>
-    <ul className='flex-1 flex justify-center items-center gap-16 max-lg:block max-lg:justify-self-end'>
+    <div className={active ? "py-6 lg:hidden absolute right-[5%] z-10" : "hidden" }>
+
+    <ul className='flex-1 flex-col max-lg:block'>
     {navLinks.map((item) => (
         <li key={item.label}>
             <Link href={item.href} className="font-montserrat leading-normal text-lg text-slate-gray">{item.label}</Link>

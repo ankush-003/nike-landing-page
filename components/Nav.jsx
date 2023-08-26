@@ -27,7 +27,7 @@ const Nav = () => {
                 ))}
             </ul>
             <div className='lg:hidden'>
-            <Image className={active ? "hidden" : ""} src={ hamburger } alt="hamburger" width={25} height={25} onClick={showMenu}/>
+                <Image className="" src={ hamburger } alt="hamburger" width={25} height={25} onClick={showMenu}/>
                 <MenuItems showMenu={showMenu} active={active}/>
             </div>
             
